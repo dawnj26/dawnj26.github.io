@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  border: 1px solid green;
+  border-style: dashed;
+}
+
+html * {
+  font-family: "Poppins", sans-serif !important;
+  color-scheme: dark !important;
+  margin: 0;
+}
+
+html,
+body,
+.main {
+  height: 100vh;
+}
+
+body {
+  background-color: #454545;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #4d4d4d;
+  padding: 24px;
+  border-radius: 1rem;
+  gap: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+  position: relative;
+}
+
+#password,
+#email {
+  height: 3rem;
+  padding: 1rem;
+  font: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #CCCCCC;
+  width: 100%;
+}
+.email, .password {
+    position: relative;
+    margin-bottom: .75rem;
+}
+
+.form .label {
+    position: absolute;
+    left: 1rem;
+    top: -.75rem;
+
+    color: #CCCCCC;
+    background-color: #4d4d4d;
+
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-submit button {
+    height: 3rem;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #FF6200;
+}
+.form-submit p {
+    text-align: center;
+}
+
+.separator{
+    position:relative;
+}
+
+.separator p {
+    text-align: center;
+}
+
+.separator hr {
+    position: absolute;
+}
