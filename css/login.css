@@ -4,8 +4,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  border: 1px solid green;
-  border-style: dashed;
+  /* border: 1px solid green;
+  border-style: dashed; */
 }
 
 html * {
@@ -31,7 +31,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 30rem;
+  
 }
+#primary-logo {
+  width: 8rem;
+  margin: 24px 0 0 24px;
+}
+
+
 
 .container {
   display: flex;
@@ -39,13 +46,17 @@ body {
   background-color: #4d4d4d;
   padding: 24px;
   border-radius: 1rem;
-  gap: 24px;
+  gap: 32px;
+  min-width: 30rem;
+
 }
+
+
 
 .form {
   display: flex;
   flex-direction: column;
-  min-width: 30rem;
+
   position: relative;
 }
 
@@ -58,6 +69,7 @@ body {
   background-color: transparent;
   border: 1px solid #CCCCCC;
   width: 100%;
+  outline: none;
 }
 .email, .password {
     position: relative;
@@ -67,8 +79,8 @@ body {
 .form .label {
     position: absolute;
     left: 1rem;
-    top: -.75rem;
-
+    top: -.5rem;
+    font-size: .75rem;
     color: #CCCCCC;
     background-color: #4d4d4d;
 
@@ -77,6 +89,7 @@ body {
 .checkbox {
     display: flex;
     justify-content: space-between;
+    font-size: .75rem;
 }
 
 .form-submit button {
@@ -84,9 +97,12 @@ body {
     width: 100%;
     border-radius: .5rem;
     background-color: #FF6200;
+    border: none;
+    margin-bottom: .5rem;
 }
 .form-submit p {
     text-align: center;
+    font-size: .75rem;
 }
 
 .separator{
@@ -95,8 +111,16 @@ body {
 
 .separator p {
     text-align: center;
+    font-size: .75rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: #4d4d4d;
+    padding: 0 .25rem;
 }
 
 .separator hr {
-    position: absolute;
+    width: 100%;
 }
+
