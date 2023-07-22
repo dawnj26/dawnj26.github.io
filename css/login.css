@@ -21,11 +21,12 @@ body,
 }
 
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  overflow: hidden;
 }
 
 body {
@@ -184,5 +185,15 @@ body {
 }
 
 .footer a {
-  color: #FF6200;
+  color: #fff;
+}
+
+.dome {
+  position: absolute;
+  background-color: #FF6200;
+  width: 105%;
+  height: 15rem;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 100% 100% 0 0;
 }
