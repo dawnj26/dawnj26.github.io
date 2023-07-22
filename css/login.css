@@ -20,6 +20,14 @@ body,
   height: 100vh;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 body {
   background-color: #454545;
   color: white;
@@ -30,13 +38,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 30rem;
+  /* min-height: 30rem; */
   
 }
 #primary-logo {
   display: block;
-  width: 9rem;
-  margin: 16px auto;
+  width: 7rem;
+  margin: 1rem;
 }
 
 .checkbox a, .form-submit a {
@@ -50,10 +58,15 @@ body {
   padding: 32px 24px;
   border-radius: 1rem;
   gap: 32px;
-  min-width: 25rem;
-
+  min-width: 20rem;
 }
 
+.header h1{
+  font-size: 2rem;
+}
+.header p{
+  font-size: .75rem;
+}
 
 .form {
   display: flex;
@@ -64,9 +77,9 @@ body {
 
 #password,
 #email {
-  height: 3rem;
+  height: 2.5rem;
   padding: 1rem;
-  font: 1.25rem;
+  /* font: 1rem; */
   border-radius: 0.5rem;
   background-color: transparent;
   border: 1px solid #CCCCCC;
@@ -102,7 +115,7 @@ body {
 }
 
 .form-submit button {
-    height: 3rem;
+    height: 2.5rem;
     width: 100%;
     border-radius: .5rem;
     background-color: #FF6200;
@@ -110,6 +123,7 @@ body {
     margin-bottom: .5rem;
     transition: 150ms ease;
     cursor: pointer;
+    font-size: .75rem;
 }
 .form-submit button:hover {
   background-color: #e75900;
@@ -164,9 +178,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin: 2rem 0;
+  margin-top: 24px;
   height: 3rem;
-  font-size: .75rem;
+  font-size: .5rem;
 }
 
 .footer a {
